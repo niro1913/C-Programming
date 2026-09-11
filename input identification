@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    char ch ;
+    scanf("%c",&ch);
+    if(ch>='A'&&ch<='Z'||ch>='a'&&ch<='z')
+    printf("character is an alphabet");
+    else if(ch>='0'&&ch<='9'||ch=='-')
+    printf("character is a number");
+    else
+    printf("special character");
+}
