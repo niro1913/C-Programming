@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    float salary,HRA,DA,Gross;
+    printf("Enter salary: ");
+    scanf("%f",&salary);
+    if(salary<=10000){
+        HRA=salary*0.20;
+        DA=salary*0.80;
+        Gross=salary+HRA+DA;
+        printf("Gross = %.2f",Gross);
+    }else if(salary<=20000){
+        HRA=salary*0.25;
+        DA=salary*0.90;
+        Gross=salary+HRA+DA;
+        printf("Gross = %.2f",Gross);
+    }else if(salary>20000){
+        HRA=salary*0.30;
+        DA=salary*0.95;
+        Gross=salary+HRA+DA;
+        printf("Gross = %.2f",Gross);
+    }
+    return 0;
+}
