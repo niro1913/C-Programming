@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+    int phy,che,bio,mat,cs;
+    printf("Enter phy marks: ");
+    scanf("%d",&phy);
+    printf("Enter che marks: ");
+    scanf("%d",&che);
+    printf("Enter bio marks: ");
+    scanf("%d",&bio);
+    printf("Enter mat marks: ");
+    scanf("%d",&mat);
+    printf("Enter cs marks: ");
+    scanf("%d",&cs);
+    int tot=phy+che+bio+mat+cs;
+    int per=(tot*100)/500;
+    printf("Percentage = %d%%\n",per);
+    if(per>=90)
+      printf("Grade A");
+    else if(per>=80)
+      printf("Grade B");
+    else if(per>=70)
+      printf("Grade C");
+    else if(per>=60)
+      printf("Grade D");
+    else if(per>=40)
+      printf("Grade E");
+    else if(per<40)
+      printf("Grade F");
+}
