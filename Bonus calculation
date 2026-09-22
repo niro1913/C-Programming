@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    int S;
+    char  G;
+    int salary;
+    printf("Enter the Salary: ");
+    scanf("%d",&S);
+    printf("Enter the Gender: ");
+    scanf(" %c",&G);
+    if(G=='M'){
+        salary=S+(S*5/100);
+        if(S<10000){
+        salary=salary+(S*2/100);
+        }
+        printf("Bonused Salary: %d",salary);
+    }
+    else if (G=='F'){
+        salary=S+(S*10/100);
+        if(S<10000){
+        salary=salary+(S*2/100);
+        }
+        printf("Bonused Salary: %d",salary);
+    }
+    return 0;
+}
