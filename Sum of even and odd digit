@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main(){
+    int n,a,b,c,d,e;
+    int evensum=0,oddsum=0;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    a=n/10000;
+    b=(n/1000)%10;
+    c=(n/100)%10;
+    d=(n/10)%10;
+    e=n%10;
+    if(a%2==0)
+    evensum=evensum+a;
+    else
+    oddsum=oddsum+a;
+    if(b%2==0)
+    evensum=evensum+b;
+    else
+    oddsum=oddsum+b;
+    if(c%2==0)
+    evensum=evensum+c;
+    else
+    oddsum=oddsum+c;
+    if(d%2==0)
+    evensum=evensum+d;
+    else
+    oddsum=oddsum+d;
+    if(e%2==0)
+    evensum=evensum+e;
+    else
+    oddsum=oddsum+e;
+    printf("Evensum = %d\n",evensum);
+    printf("Oddsum= %d\n",oddsum);
+    return 0;
+
+}
