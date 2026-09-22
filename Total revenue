@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+    int SP;
+    printf("Enter the Selling price: ");
+    scanf("%d",&SP);
+    int Q;
+    printf("Enter the Quatity: ");
+    scanf("%d",&Q);
+    char M;
+    printf("Enter the middleman: ");
+    scanf(" %c",&M);
+    int Total=SP*Q;
+    if(M=='A'){
+       Total=Total-(Total*10/100);
+       printf("Total revenue : %d",Total);
+    }
+    else if(M=='B'){
+       Total=Total-(Total*20/100);
+       printf("Total revenue : %d",Total);
+    }
+    else if(M=='C'){
+       Total=Total-(Total*30/100);
+       printf("Total revenue : %d",Total);
+    }
+    else{
+    printf("Invalid middlemen\n");
+    printf("%d",Total);
+}
+    return 0;
+}
