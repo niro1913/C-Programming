@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    if(n>=10000&&n<=99999)
+    printf("5 digit number");
+    else if(n<=-10000&&n>=-99999)
+    printf("Negative 5 digit number");
+    else 
+    printf("Not a five digit number");
+    return 0;
+}
