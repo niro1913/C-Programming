@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char gender[10];
+    scanf("%s",gender);
+    int hrs,s;
+    scanf("%d",&hrs);
+    if((strcmp(gender,"Male")==0)||(strcmp(gender,"male")==0)){
+        if(hrs>0&&hrs<=8){
+            s=hrs*80;
+            printf("Total Salary = %d",s);
+        }else if(hrs>8){
+            s=(8*80)+((hrs-8)*100);
+            printf("Total salary = %d",s);
+        }
+    }
+    else if((strcmp(gender,"Female")==0) || (strcmp(gender,"female")==0)){
+        if(hrs>0&&hrs<=8){
+            s=hrs*60;
+            printf("Total Salary = %d",s);
+        }else if(hrs>8){
+            s=(8*60)+((hrs-8)*100);
+            printf("Total salary = %d",s);
+        }
+    }
+    else {
+        printf("Invalid input");
+    }
+    return 0;
+}
